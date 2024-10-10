@@ -39,8 +39,6 @@ print("Value Counts:\n", value_counts)
 value_counts = merged['type_of_admission'].value_counts()
 print("Value Counts:\n", value_counts)
 
-import numpy as np
-
 length_of_stay = np.array([74085, 66479, 49343, 33418, 23726])
 total_charges = np.array([9203.04, 15082.10, 17690.10, 14587.88, 15611.25])
 total_costs = np.array([2384.85, 1743.66, 1924.39, 4825.86, 3011.89])
@@ -119,3 +117,14 @@ plt.ylabel('Count')
 plt.xticks(rotation=90)
 plt.show()
 
+# Handling missing data
+
+# 1: Dropping rows with missing values
+merged_dropped = merged.dropna()
+
+# 2: Filling missing values with mean/median for numerical columns
+merged_filled = merged.fillna({
+    'length_of_stay': merged['length_of_stay'].median(),
+    'total_charges': merged['total_charges'].median(),
+    'total_costs': merged['total_costs'].median()
+})
