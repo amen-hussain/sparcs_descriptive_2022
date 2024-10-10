@@ -8,10 +8,12 @@ In this assignment, you will load a portion of the 2022 SPARCS (Statewide Planni
  **Summary Report**:
    - Write a brief summary of your findings in the notebook:
      - What is the average length of stay?  
-     The mean length of stay is approximately 49,410.2.
+
+The mean length of stay is approximately 49,410.2.
 
      - How does the total cost vary by age group or type of admission?
-      The dataset is dominated by patients aged 70 or older (128,947 patients), followed by those aged 50 to 69 (90,430 patients). The smallest group is patients aged 18 to 29 (23,061 patients).
+     
+The dataset is dominated by patients aged 70 or older (128,947 patients), followed by those aged 50 to 69 (90,430 patients). The smallest group is patients aged 18 to 29 (23,061 patients).
 
      - Any noticeable trends in admissions or charges?
   
@@ -21,5 +23,8 @@ Charges: The mean total charges for patients is $14,434.87, with a median of $15
 Costs: The mean total costs are $2,778.13, with a median of $2,384.85. The maximum cost is $4,825.86, and the minimum is $1,743.66.
 
 Type of Admission Distribution: The most common type of admission is "Emergency" with 233,718 admissions, followed by "Elective" with 55,232. There are also 29,553 "Newborn" admissions.
+
+**Issues**
+I began to have difficulty with running the end of my code. I suspect this was due to the extensive data set. I had to let my code run for > 30 minutes and I was still unable to load the visual for "# 3. Bar plot for Type of Admission." Furthermore, I the code I wrote for the missing data portion did not give an output in my terminal. I was unable to troubleshoot both of these occurances myself. 
 
 
