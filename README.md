@@ -11,16 +11,13 @@ In this assignment, you will load a portion of the 2022 SPARCS (Statewide Planni
 
 The mean length of stay is approximately 49,410.2.
 
-     - How does the total cost vary by age group or type of admission?
+- How does the total cost vary by age group or type of admission?
      
 The dataset is dominated by patients aged 70 or older (128,947 patients), followed by those aged 50 to 69 (90,430 patients). The smallest group is patients aged 18 to 29 (23,061 patients).
 
-     - Any noticeable trends in admissions or charges?
-  
-**Total Charges and Costs:**
-Charges: The mean total charges for patients is $14,434.87, with a median of $15,082.10. The maximum charge in the dataset is $17,690.10, and the minimum is $9,203.04.
+- Trends in admissions and charges.
 
-Costs: The mean total costs are $2,778.13, with a median of $2,384.85. The maximum cost is $4,825.86, and the minimum is $1,743.66.
+Charges: The mean total charges for patients is $14,434.87, with a median of $15,082.10. The maximum charge in the dataset is $17,690.10, and the minimum is $9,203.04.
 
 Type of Admission Distribution: The most common type of admission is "Emergency" with 233,718 admissions, followed by "Elective" with 55,232. There are also 29,553 "Newborn" admissions.
 
