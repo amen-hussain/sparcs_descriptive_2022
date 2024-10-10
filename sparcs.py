@@ -130,20 +130,20 @@ plt.xticks(rotation=45)
 
 # Handling missing values in the dataset
 
-print(merged.isnull().sum())  # Shows the count of missing values per column
+### Handling Missing Data 
+data = {
+    'Length of Stay': [74085, 66479, 49343, 33418, 23726],
+    'Total Charges': [9203.04, 15082.10, 17690.10, 14587.88, 15611.25],
+    'Type of Admission': ['Emergency', 'Elective', 'Newborn', 'Urgent', 'Trauma', 'Not Available']
+}
 
-# 1. Dropping rows with missing values
-merged_dropped = merged.dropna()
+df = pd.DataFrame(data)
 
-# 2. Filling missing values with mean/median for numerical columns
-# and most frequent value for categorical columns
-merged_filled = merged.fillna({
-    'length_of_stay': merged['length_of_stay'].median(),
-    'total_charges': merged['total_charges'].median(),
-    'total_costs': merged['total_costs'].median(),
-    'age_group': merged['age_group'].mode()[0],  # Fill categorical columns with mode (most frequent value)
-    'gender': merged['gender'].mode()[0],
-    'type_of_admission': merged['type_of_admission'].mode()[0]
-})
+# Check for missing data
+print("Missing data in each column:")
+print(df.isnull().sum())
 
-print(merged_filled.isnull().sum())  # Check again after filling missing values
+# Drop rows with missing data
+df_dropped = df.dropna()
+print("\nData after dropping rows with missing data:")
+print(df_dropped)
