@@ -90,32 +90,6 @@ plt.xticks(rotation=90)
 plt.tight_layout()
 plt.show()
 
-# Visualizations**:
-   # Create at least 3 visualizations to summarize the dataset:
-
-    #  Histogram of Length of Stay
-plt.figure(figsize=(8, 6))
-sns.histplot(merged['length_of_stay'].dropna(), bins=30, kde=True, color='blue')
-plt.title('Distribution of Length of Stay')
-plt.xlabel('Length of Stay')
-plt.ylabel('Frequency')
-plt.show()
-
-    # Boxplot for Total Charges to identify outliers
-plt.figure(figsize=(8, 6))
-sns.boxplot(x=merged['total_charges'].dropna(), color='green')
-plt.title('Boxplot of Total Charges')
-plt.xlabel('Total Charges')
-plt.show()
-
-    # Bar plot for Type of Admission to analyze admission trends
-plt.figure(figsize=(8, 6))
-sns.barplot(x=admission_type_counts.index, y=admission_type_counts.values, palette='coolwarm')
-plt.title('Type of Admission Analysis')
-plt.xlabel('Type of Admission')
-plt.ylabel('Count')
-plt.xticks(rotation=90)
-plt.show()
 
 # Handling missing data
 
